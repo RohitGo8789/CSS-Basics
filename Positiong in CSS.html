@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning in CSS</title>
+    <style>
+        div{
+            border: 0.5px solid black;
+        }
+        img{
+            margin: 0.2px;
+        }
+        .image2{
+            position: relative;
+            top: 20px;
+            /* position: absolute;
+            top: 30px; */
+        }
+        .container{
+            position: relative;
+            height: 1000px;
+            background-color: yellowgreen;
+        }
+
+        .image4{
+            position:fixed;
+        }
+
+        .image3{
+            position: sticky;
+            top: 100px;
+        }
+        .box{
+            background-color: blueviolet;
+            height: 500px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <img 
+        src="sc1.png" 
+        alt="screenshot1"
+        width="50px"
+        height="50px"
+        class="image1"
+        />
+
+        <img 
+        src="sc2.png" 
+        alt="screenshot2"
+        width="50px"
+        height="50px"
+        class="image2"
+        />
+
+        <img 
+        src="sc3.png" 
+        alt="screenshot3"
+        width="50px"
+        height="50px"
+        class="image3"
+        />
+
+        <img 
+        src="sc4.png" 
+        alt="screenshot4"
+        width="50px"
+        height="50px"
+        class="image4"
+        />
+
+    </div>
+    <div class="box">
+
+    </div>
+</body>
+</html>
